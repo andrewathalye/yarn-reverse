@@ -1,0 +1,21 @@
+map.sh :
+	Use TinyRemapper to remap a jar
+	Supports official; intermediary, named
+	Mapping can be done from:
+		official -> intermediary, named
+		intermediary -> official, named
+		named -> intermediary
+	Thus, to go from named to official takes two steps.
+	Run with no arguments for usage
+
+How to use :
+	Download yarn from Github for the version of Minecraft you would like
+	Run ./gradlew yarn
+	Run ./gradlew build
+	Extract the tiny mapping from the tar.gz archive produced in build
+	This provides a mapping containing all three stages
+	(official, intermediary, named)
+	Next, use map.sh.
+
+	It is also important to extract the library files from the .gradle folder
+	in yarn. Save these in a folder which will later be specified (no spaces please).
